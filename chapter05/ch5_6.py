@@ -1,18 +1,18 @@
 # 자료구조의 변경
 
 # set => list 변경
-menu = {"햄버거","콜라","감자튀김"}
-print(menu,type(menu)) # {'감자튀김', '햄버거', '콜라'} <class 'set'
-menu = list(menu)
-print(menu, type(menu)) # ['감자튀김', '콜라', '햄버거'] <class 'list'>
+# menu = {"햄버거","콜라","감자튀김"}
+# print(menu,type(menu)) # {'감자튀김', '햄버거', '콜라'} <class 'set'
+# menu = list(menu)
+# print(menu, type(menu)) # ['감자튀김', '콜라', '햄버거'] <class 'list'>
 
 # List => tuple
-menu = tuple(menu)
-print(menu, type(menu)) # ('감자튀김', '콜라', '햄버거') <class 'tuple'>
+# menu = tuple(menu)
+# print(menu, type(menu)) # ('감자튀김', '콜라', '햄버거') <class 'tuple'>
 
 # List => set
-menu = set(menu)
-print(menu, type(menu)) # {'감자튀김', '콜라', '햄버거'} <class 'set'>
+# menu = set(menu)
+# print(menu, type(menu)) # {'감자튀김', '콜라', '햄버거'} <class 'set'>
 
 
 
@@ -40,6 +40,22 @@ print(menu, type(menu)) # {'감자튀김', '콜라', '햄버거'} <class 'set'>
 #   data_list.append(i)
 # print(data_list)
 
-data_list2 = range(1,21)
-data_list3 = list(data_list2)
-print(data_list3, type(data_list3))
+# 리스트 = [1,....20]
+# from random import *
+# data_list = list(range(1,21))
+# print(data_list, type(data_list))
+# shuffle(data_list)
+# print(data_list)
+
+# print("치킨 당첨자: [{}]".format(data_list[0]))
+# print("커피 당펌자: [2, 3, 4] -- 축하합니다.".format(data_list[1:4]))
+
+# sample 이용해서 프로그램 코딩
+from random import *
+data_list = list(range(1,21))
+shuffle(data_list)
+print(data_list)
+sample_List = sample(data_list, 4)
+print(sample_List)
+print("치킨 당첨자: [{}]".format(sample_List[0]))
+print("커피 당펌자: [2, 3, 4] -- 축하합니다.".format(sample_List[1:4]))
