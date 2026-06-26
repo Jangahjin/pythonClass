@@ -5,8 +5,6 @@
 # 실행결과
 # 15000.0
 
-def cal_average_gold(gold1, gold2, gold3):
-num = gold1 + gold2 + gold3
-return num / 3
-
-def  cal_average_gold(12000, 15000, 18000)
+def cal_average_gold(no):
+  avg = sum(no) / len (no)
+  print
